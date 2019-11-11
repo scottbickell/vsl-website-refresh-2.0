@@ -1,0 +1,13 @@
+.desktop-nav.nav {
+    float:left;
+}
+
+.desktop-nav.nav>li>a,
+.desktop-nav li.no-dropdown a {
+    text-transform: none;
+
+}
+
+.navbar>.container .navbar-brand img {
+    height: 40px;
+}

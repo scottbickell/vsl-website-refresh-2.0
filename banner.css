@@ -1,0 +1,50 @@
+/* TODO 
+
+When moving this over to SCSS use variables for the height
+
+*/
+
+.hero-banner {
+    background-image: url('img/home.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blue-overlay {
+    /* background: linear-gradient(107.27deg, #004C7F 0%, #0090D7 100%);
+    mix-blend-mode: normal;
+    opacity: 0.7; */
+    background: linear-gradient(to right, rgba(0, 76, 127, .9), rgba(28, 93, 166, .8));
+    height: 400px;
+}
+
+.hero-banner-cta {
+    display: table-cell;
+    vertical-align: middle;
+    height: 400px;
+}
+
+.hero-banner-cta img {
+    width: 80%;
+}
+
+.hero-banner-cta p {
+    color: #ffffff;
+}
+
+.btn-default {
+    color: #004C7F;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .hero-banner-cta img {
+        max-width: 400px;
+    }
+  }
+
+/* height: calc(100% - 50px);
+overflow: auto; */
