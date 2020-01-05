@@ -1039,67 +1039,37 @@
                     </div>
                 </nav>
             </header>
-            <!-- CAROUSEL -->
-
+<style>
+.modal-body {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+</style>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div id="quoteCarousel" class="carousel" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <!-- FIRST COMMENT -->
-                                <div class="item active">
-                                    <div class="carousel-caption">
-                                        <h4>Dr. Amy Runge, Administrator, An Achievable Dream Academy, Newport New
-                                            Public Schools, VA</h4>
-                                        <p>“These students are engaged learners now and even the weakest students from
-                                            the outset are now largely reaching grade level. We’ve used a variety of
-                                            products over the years, but LANGUAGE! Live is one that has allowed us to
-                                            achieve the most significant gains with our then-lowest-achieving students.
-                                            We’ve had a lot of growth, and even their desire to be learners has changed
-                                            and grown. In fact, these students even understand other subjects better
-                                            because they can read the course materials effectively.”</p>
-                                    </div>
-                                </div>
-                                <!-- SECOND COMMENT -->
-                                <div class="item">
-                                    <div class="carousel-caption">
-                                        <h4>Lorem enibh modipsu essit utatum, consequam nulput im. </h4>
-                                        <p>Ese elis fermentum molestie nullam modionsed eugiat mincidunt inciduipit.
+                        <h1>Modal for the forms:</h1>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            Open form modal button
+                        </button>
+                        <p class="mt-20"><a href="#myModal" data-toggle="modal" data-target="#myModal">Open form modal text link</a></p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal window title (optional)</h4>
+                                        <p>Modal window body copy Lorem enibh modipsu essit utatum, consequam nulput im.
+                                            Ese elis fermentum molestie nullam modionsed eugiat mincidunt inciduipit.
                                             Secte adignim enississe sem varius dolendit tortor, iscipit vulputat laore,
                                             nulputpatum adiatet blamet vestibulum.</p>
                                     </div>
-                                </div>
-                                <!-- THIRD COMMENT -->
-                                <div class="item">
-                                    <div class="carousel-caption">
-                                        <h4>Ese elis fermentum molestie nullam modionsed eugiat mincidunt inciduipit.</h4>
-                                        <p>Lorem enibh modipsu essit utatum, consequam nulput im. Ese elis fermentum
-                                            molestie nullam modionsed eugiat mincidunt inciduipit. Secte adignim
-                                            enississe sem varius dolendit tortor, iscipit vulputat laore, nulputpatum
-                                            adiatet blamet vestibulum.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <ol class="carousel-indicators">
-                                            <!-- ADD NEW INDICATORS HERE -->
-                                            <li data-target="#quoteCarousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#quoteCarousel" data-slide-to="1"></li>
-                                            <li data-target="#quoteCarousel" data-slide-to="2"></li>
-                                            <!-- <li data-target="#quoteCarousel" data-slide-to="3"></li> -->
-                                            <!-- <li data-target="#quoteCarousel" data-slide-to="4"></li> -->
-                                        </ol>
-
-                                        <a class="left carousel-control" href="#quoteCarousel" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#quoteCarousel" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" height="1100" src="https://voyagerlearning.secure.force.com/pform?type=letrs_contact_website" style="overflow:scroll;" width="100%"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -1107,18 +1077,6 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div>
-                    <row>
-                        <div class="col-sm-12">
-                            <h1>
-                                Placeholder content in a new row
-                            </h1>
-                        </div>
-                    </row>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -1283,8 +1241,6 @@
     <script
         src="https://qa.voyagersopris.com/Frontend-Assembly/Telerik.Sitefinity.Frontend.Search/Mvc/Scripts/SearchBox/Search-box.js?package=Voyager"
         type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
     <script src="https://qa.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/debounce-on.js"></script>
@@ -1302,9 +1258,7 @@
     <script>
         $(document).ready(function () {
             $('.dropdown-toggle').dropdown();
-            $('.carousel').carousel({
-                interval: false
-            })
+            $('.modal').insertAfter($('body'));
         });
     </script>
 </body>
