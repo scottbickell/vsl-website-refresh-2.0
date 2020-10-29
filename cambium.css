@@ -1,0 +1,10 @@
+.cambium-logo-container {
+    display: block;
+    float: right;
+    background: gray;
+}
+
+img.cambium-company-logo {
+    height: 40px;
+}
+

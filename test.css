@@ -1,0 +1,56 @@
+.letrs-section {
+    background-color: #991b1e;
+
+    .content {
+        float: right;
+        padding-right: 50px;
+        padding-left: 15px;
+        text-align: left;
+
+        h3, .h3 {
+            color: #ffffff;
+        }
+    }
+
+    ul {
+        margin-top: 0px;
+
+        li {
+            color: #ffffff;
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.passport-section {
+    background-color: #025688;
+
+    .content {
+        float: left;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: #fff;
+
+        h3, .h3 {
+            color: #fff;
+        }
+    }
+
+    ul {
+
+        li {
+            color: #fff;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+.purple {
+    background-color: #341e56;
+}
